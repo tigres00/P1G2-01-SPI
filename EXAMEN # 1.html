@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UPC</title>    
+</head>
+<boby>
+
+<p>Examen Parcial</p>
+<button onclick="mostrarImparesDeN_FOR()">boton en HTML</button>
+
+<p>Multiplicar el factorial dos numeros</p>
+<button onclick="multiplicarfactorialAyB()">multiplicarfactorialAyB</button>
+<script>
+//Codigo de programacion - INICIA
+
+function mostrarImparesDeN_FOR(){
+    var numero = 10
+    for (var i = 1; i <= numero; i++){
+        if (i% 2 ==0){
+            alert(i)
+        }else{
+            //No hacer nada
+        }
+    }
+
+}
+
+
+function multiplicarfactorialAyB(){
+    var numeroA = 1
+    var numeroB = 2
+
+    var resultadoA = FactorialNumero(numeroA)
+    var resultadoB = FactorialNumero(numeroB)
+
+    var resultadoFinal = resultadoA * resultadoB
+    alert(resultadoFinal)
+}
+
+function FactorialNumero(numero){
+    var i = 1 
+    var resultado = 1
+    while (i <= numero){
+        resultado = resultado * i
+        i = i + 1
+    }
+    alert(resultado)
+    return resultado
+}
+//Codigo de programacion - TERMINA
+</script>
+</boby>
+</html>
+
